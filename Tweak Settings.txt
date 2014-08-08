@@ -1,0 +1,4 @@
+         if((n > min_blob_sze) && (n < max_blob_sze))		// Reduces chances of decoding erroneous 'Blobs' as markers
+                        {
+                            if((aspect_ratio > 0.33) && (aspect_ratio < 3.0))	// Increases chances of identified 'Blobs' to be close to Square 
+                            {

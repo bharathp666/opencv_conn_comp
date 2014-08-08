@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 2.8)
+project( conn )
+find_package( OpenCV REQUIRED )
+add_executable( video conn.cpp )
+target_link_libraries( video ${OpenCV_LIBS} )
+
+project( conn_image )
+find_package( OpenCV REQUIRED )
+add_executable( still conn_image.cpp )
+target_link_libraries( still ${OpenCV_LIBS} )
